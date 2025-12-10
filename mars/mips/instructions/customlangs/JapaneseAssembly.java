@@ -102,7 +102,7 @@ public class JapaneseAssembly extends CustomAssembly{
         }));
 
     instructionList.add(
-        new BasicInstruction("yomu $t1, imm($t2)",
+        new BasicInstruction("yomu $t1, -100($t2)",
         "load a data from memory address($t2 + imm) into $t1",
         BasicInstructionFormat.I_FORMAT,
         "100011 ttttt fffff ssssssssssssssss",
@@ -124,7 +124,7 @@ public class JapaneseAssembly extends CustomAssembly{
         }));
 
     instructionList.add(
-        new BasicInstruction("kaku $t1, imm($t2)",
+        new BasicInstruction("kaku $t1, -100($t2)",
         "store the data in $t1 to memory address($t2 + imm)",
         BasicInstructionFormat.I_FORMAT,
         "101011 ttttt fffff ssssssssssssssss",
